@@ -1,0 +1,29 @@
+1. link chat html to main html
+2. fix main.html footer
+
+
+chat page
+
+main page
+2. link nav bar to sign in/sign up page
+
+
+React
+1. Learn components react concept
+2. react function component 
+
+Firebase
+1. authentication 
+2. firestore 
+3. in real time
+
+sign in/sign up
+1. sign in/ sign up static HTML CSS 
+
+Prviacy page 
+- terms and conditions 
+
+
+Contact 
+
+
