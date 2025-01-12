@@ -1,5 +1,4 @@
 1. link chat html to main html
-2. fix main.html footer
 
 
 chat page
