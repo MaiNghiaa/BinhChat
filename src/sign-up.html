@@ -1,102 +1,158 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/assets/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../public/assets/output.css">
-    <title>Document</title>
-</head>
+    <link rel="stylesheet" href="../public/assets/output.css" />
 
-<body>
-
-    <nav
-        class=" w-full h-10 bg-teal-300 flex items-center justify-between relative sm:py-5 md:py-7 lg:py-9 xl:py-11 2xl:py-13">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-            class="size-12 pl-3 sm:size-13 md:size-15 lg:size-17 xl:size-19 2xl:size-21 ">
-            <path
-                d="M15.75 8.25a.75.75 0 0 1 .75.75c0 1.12-.492 2.126-1.27 2.812a.75.75 0 1 1-.992-1.124A2.243 2.243 0 0 0 15 9a.75.75 0 0 1 .75-.75Z" />
-            <path fill-rule="evenodd"
-                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM4.575 15.6a8.25 8.25 0 0 0 9.348 4.425 1.966 1.966 0 0 0-1.84-1.275.983.983 0 0 1-.97-.822l-.073-.437c-.094-.565.25-1.11.8-1.267l.99-.282c.427-.123.783-.418.982-.816l.036-.073a1.453 1.453 0 0 1 2.328-.377L16.5 15h.628a2.25 2.25 0 0 1 1.983 1.186 8.25 8.25 0 0 0-6.345-12.4c.044.262.18.503.389.676l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 0 1-1.161.886l-.143.048a1.107 1.107 0 0 0-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 0 1-1.652.928l-.679-.906a1.125 1.125 0 0 0-1.906.172L4.575 15.6Z"
-                clip-rule="evenodd" />
-        </svg>
-
-        <!-- Mobile Menu Button -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" popovertarget="mypopover"
-            id="mobile-menu"
-            class="block  pr-3 md:hidden size-12 sm:size-13 md:size-15 lg:size-17 xl:size-19 2xl:size-21">
-            <path fill-rule="evenodd"
-                d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
-                clip-rule="evenodd" />
-        </svg>
-
-        <!-- Mobile Menu Options -->
-        <div id="mobile-options"
-            class="w-full h-auto bg-teal-400 hidden md:hidden absolute top-full flex flex-col  font-semibold">
-            <a class="w-full 	flex-grow bg-teal-400 hover:bg-teal-500 text-center py-2   href=" #">Demos</a>
-            <a class="w-full 	flex-grow:  bg-teal-400 hover:bg-teal-500 text-center py-2   href=" #">About</a>
-            <a class="w-full 	flex-grow: bg-teal-400 hover:bg-teal-500 text-center py-2   href=" #">Contact</a>
-            <a class="w-full  	flex-grow: bg-teal-400 hover:bg-teal-500 text-center py-2   href=" #">Login</a>
-            <a class="w-full  	flex-grow: bg-teal-400 hover:bg-teal-500 text-center py-2   href=" #">Get
-                Started</a>
-        </div>
-
-        <div class="w-5/6 hidden md:block md:flex md:justify-around items-center">
-            <!-- Left Section -->
-            <div class="w-2/3 flex items-center gap-6 justify-center">
-                <a href="#"
-                    class="hover:text-teal-500 hover:underline focus:outline-none focus:ring-2 focus:ring-teal-500 py-1  xl:text-2xl 2xl:text-3xl">Demos</a>
-                <a href="#"
-                    class="hover:text-teal-500 hover:underline focus:outline-none focus:ring-2 focus:ring-teal-500 py-1  xl:text-2xl 2xl:text-3xl">About</a>
-                <a href="#"
-                    class="hover:text-teal-500 hover:underline focus:outline-none focus:ring-2 focus:ring-teal-500 py-1  xl:text-2xl 2xl:text-3xl">Contact</a>
-            </div>
-
-            <!-- Right Section -->
-            <div class="w-1/3 flex items-center gap-8 justify-center ">
-                <a href="#"
-                    class="hover:text-teal-500 hover:underline focus:outline-none focus:ring-2 focus:ring-teal-500 py-1  xl:text-2xl 2xl:text-3xl">Login</a>
-                <a href="#"
-                    class="hover:text-teal-500 hover:underline focus:outline-none focus:ring-2 focus:ring-teal-500 py-1  xl:text-2xl 2xl:text-3xl">Get
-                    Started</a>
-            </div>
-        </div>
-
-    </nav>
-
-    <main class="w-full bg-red-300 flex flex-col gap-10 md:flex-row-reverse md:justify-around md:items-center">
-        <div class="flex flex-col justify-around items-center gap-7 md:w-1/2">
-
-            <div class="w-full mt-10 text-center md:mt-2">
-                <p class="text-2xl font-bold lg:text-3xl">Get Started</p>
-                <p class="lg:text-xl">Already have an account? <a class="font-semibold" href="#">Sign In</a></p>
-            </div>
+    <title>Sign Up</title>
 
 
-            <form class="w-full flex flex-col justify-around items-center gap-7 md:py-8 " action="">
-                <input class=" bg-transparent border-b-2 border-b-slate-300 outline-none" type="text"
-                    placeholder="Name">
-                <input class="bg-transparent border-b-2 border-b-slate-300 outline-none" type="email"
-                    placeholder="Email">
-                <input class="bg-transparent border-b-2 border-b-slate-300 outline-none" type="password"
-                    placeholder="Password">
+  </head>
+  <body>
+    <main class="container mx-auto flex h-screen items-center justify-center ">
+      <div class="flex items-center justify-center gap-8 p-10 rounded-md border-[1px] border-gray-200">
+    
+        <div class="flex h-24 flex-col items-center justify-center gap-10">
+          <header class="w-full text-center">
+            <p class="text-xl font-semibold">Create an account</p>
+            <p class="text-sm font-light">Connect with your friends today!</p>
+          </header>
+
+          <section>
+            <form action="" class="flex flex-col gap-4">
+              <input
+                class="w-full rounded-lg border border-gray-300 px-4 py-2 focus:outline-none focus:ring focus:ring-[#FB8E0B]"
+                type="text"
+                placeholder="Enter Your Username"
+              />
+              <input
+                class="w-full rounded-lg border border-gray-300 px-4 py-2 focus:outline-none focus:ring focus:ring-[#FB8E0B]"
+                type="email"
+                placeholder="Enter Your Email"
+              />
+              <input
+                class="w-full rounded-lg border border-gray-300 px-4 py-2 focus:outline-none focus:ring focus:ring-[#FB8E0B]"
+                type="password"
+                placeholder="Create a Password"
+              />
+              <input
+                class="w-full rounded-lg border border-gray-300 px-4 py-2 focus:outline-none focus:ring focus:ring-[#FB8E0B]"
+                type="password"
+                placeholder="Confirm Password"
+              />
+
+              <button
+                class="w-full rounded-sm bg-[#FB8E0B] py-2 text-white hover:bg-[#db7e0d]"
+                type="submit"
+              >
+                Sign Up
+              </button>
             </form>
+          </section>
 
-            <button class=" bg-emerald-700 rounded px-16 py-1">Sign Up</button>
-
-        </div>
-
-
-        <div class="flex flex-col items-center justify-center mt-10 md:w-1/2 ">
-            <img src="../public/resources/purple-bg-phone.webp" alt="" class=" w-full hidden  md:block">
-            <div class="flex flex-col bg-yellow-500 rounded-lg px-10 py-5 items-center content-around">
-                <p class="text-lg font-semibold">Top notch convenience</p>
+          <section class="flex flex-col items-center justify-center gap-4">
+            <div class="flex w-full items-center justify-center">
+              <div class="h-[1px] w-full bg-gray-400"></div>
+              <span class="text-light mx-4 whitespace-nowrap">Or With</span>
+              <div class="h-[1px] w-full bg-gray-400"></div>
             </div>
+
+            <div
+              class="flex w-full flex-row items-center justify-between rounded-lg border-[1px] border-solid border-gray-300 px-4 py-2"
+            >
+              <div class="w-[20%]">
+                <img
+                  class="mr-8 size-6"
+                  src="../public/resources/Google Logo.jpg"
+                  alt="logo.png"
+                />
+              </div>
+              <p class="w-full text-center text-sm font-semibold">
+                Sign Up with Google
+              </p>
+            </div>
+
+            <p>
+              Already have an account?
+              <a class="text-blue-600" href="./sign-in.html">Login</a>
+            </p>
+          </section>
         </div>
 
+        <div class="hidden md:flex md:items-center md:justify-center">
+          <img
+            class="max-h-[500px] max-w-[500px] flex-none object-contain"
+            src="../public/resources/dino-reichmuth-A5rCN8626Ck-unsplash 1.png"
+            alt=""
+          />
+        </div>
+      </div>
     </main>
 
-</body>
+    <footer class="flex w-full flex-col items-center shadow-md">
+      <div class="flex w-full flex-col items-center justify-between">
+        <div
+          class="flex w-full flex-col items-center justify-center bg-[#12141D]"
+        >
+          <div class="flex w-full items-center justify-center gap-10 py-8">
+            <i class="bx bxl-facebook-circle text-2xl text-white"></i>
+            <i class="bx bxl-twitter text-2xl text-white"></i>
+            <i class="bx bxl-github text-2xl text-white"></i>
+            <i class="bx bxl-linkedin-square text-2xl text-white"></i>
+          </div>
 
+          <div class="flex w-full items-center justify-center gap-10 py-6">
+            <a
+              href="#"
+              class="py-1 text-sm text-white hover:underline xl:text-sm 2xl:text-xl"
+              >Home
+            </a>
+
+            <a
+              href="#"
+              class="py-1 text-sm text-white hover:underline xl:text-sm 2xl:text-xl"
+              >About
+            </a>
+
+            <a
+              href="#"
+              class="py-1 text-sm text-white hover:underline xl:text-sm 2xl:text-xl"
+              >Demo</a
+            >
+            <a
+              href="#"
+              class="py-1 text-sm text-white hover:underline xl:text-sm 2xl:text-xl"
+              >Contact</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="flex w-full items-center justify-center gap-8 bg-black py-6"
+        >
+          <p class="text-xs text-white xl:text-sm 2xl:text-xl">
+            Copyright © 2025; Developed by Vuong Binh
+          </p>
+        </div>
+      </div>
+    </footer> 
+  
+   
+
+  </body>
 </html>
